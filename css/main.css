@@ -1,0 +1,129 @@
+/*Gloogle fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Kristi&family=Open+Sans:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+  --verdemiel: #ddf8ad;
+  --verdeclaro: #9cd8a7;
+  --verdemarino: #68b49f;
+  --verdemedio: #559236;
+  --verdeoscuro: #0b490d;
+  --azul: #469091;
+  --azulmedio: #376b78;
+  --azuloscuro: #2f4858;
+  --beige: #f0f0f0;
+  --blanco: #ffffff;
+  --negro: #061706;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-main {
+    position: fixed;
+    width: 100%;
+    background-color: #14161450;
+    z-index: 1;
+}
+
+.nav-main ul {
+    width: 90%;
+    margin: 2% auto;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.nav-main ul li a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.3rem;
+    color: var(--blanco);
+    font-weight: 500;
+}
+
+.nav-main ul li a:hover{
+    background-color: var(--verdemedio);
+    transition: .4s ease-in-out;
+    border-radius: 90%;
+}
+
+header {
+    height: 100vh;
+}
+
+header picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%); 
+}
+
+
+.welcome-text {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    height: 100%;
+    width: 100%;
+}
+
+.welcome-text img {
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    width: 30vmax;
+    height: 23vmax;
+}
+
+.welcome-text h1 {
+    position: absolute;
+    top: 15%;
+    right: 25%;
+    color: var(--beige);
+    font-size: 10vmax;
+    font-family: 'Kristi', cursive;
+    font-weight: lighter;
+}
+
+.welcome-text p {
+    position: absolute;
+    top: 45%;
+    left: 69%;
+    transform: translate(-69%, -45%);
+    color: var(--beige);
+    font-size: 2vmax;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.btn-whatsapp {
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    bottom: 40%;
+    left: 70%;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #fff;
+}
+
+
+
+
