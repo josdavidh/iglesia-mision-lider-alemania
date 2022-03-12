@@ -247,3 +247,68 @@ header picture img {
 .carousel-element img {
   width: 40vmax;
 }
+
+
+/* Pastores Section */
+
+#pastores {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  padding: 1%;
+  margin: 3%;
+  position: relative;
+}
+
+#pastores h1 {
+  grid-column: 1 / 3;
+  font-family: "Kristi", cursive;
+  color: var(--azuloscuro);
+  font-weight: normal;
+  text-align: center;
+  font-size: 6vmax;
+  align-self: center;
+}
+
+#pastores img {
+  width: 35vmax;
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  justify-self: center;
+  border-radius: 8%;
+  box-shadow: 6px 5px 10px var(--gris);
+}
+
+#pastores .pastor,
+#pastores .pastora {
+  position: absolute;
+  top: 43%;
+  transform: translate(0,-50%);
+  text-align: center;
+}
+
+#pastores .pastor h2,
+#pastores .pastora h2 {
+  font-size: 2.5vmax;
+  font-weight: bold;
+  color: var(--azuloscuro);
+} 
+
+#pastores .pastor h3,
+#pastores .pastora h3 {
+  font-size: 1.1vmax;
+  font-weight: normal;
+  color: var(--gris);
+}
+#pastores .pastora {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  left: -1;
+}
+
+#pastores .pastor {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  right: 5%;
+}
