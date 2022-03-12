@@ -17,6 +17,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Glider Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
   </head>
   <body>
     <nav class="nav-main">
@@ -63,7 +66,39 @@
       </section> 
 
       <section id="ministerios">
-        <div><h1>Ministerios</h1></div>
+        <div class="ministerios-title"><h1>Ministerios</h1></div>
+
+        <div class="carousel-ministerios">
+          <button aria-label="Previous" class="carousel-previous">
+            <i class="fas fa-chevron-left fa-3x"></i>
+          </button>
+          <div class="carousel-list">
+            <div class="carousel-element">
+              <img src="./sources/img/small/main2.jpg" alt="">
+              <p>Ministerio 1</p>
+            </div>
+            <div class="carousel-element">
+              <img src="./sources/img/small/main2.jpg" alt="">
+              <p>Ministerio 2</p>
+            </div>
+            <div class="carousel-element">
+              <img src="./sources/img/small/main2.jpg" alt="">
+              <p>Ministerio 3</p>
+            </div>
+            <div class="carousel-element">
+              <img src="./sources/img/small/main2.jpg" alt="">
+              <p>Ministerio 4</p>
+            </div>
+          </div>
+          <button aria-label="next" class="carousel-next">
+            <i class="fas fa-chevron-right fa-3x"></i>
+          </button>
+
+        </div>
+
+        <div role="tablist" class="carousel-indicators">
+
+        </div>
       </section>
 
       <section id="formacion">
@@ -86,5 +121,10 @@
     <footer class="footer">
 
     </footer>
+
+    <!-- Cnd Glider.js -->
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
+    <!-- Own Glider.js -->
+    <script src="./js/ownGlider.js"></script>
   </body>
 </html>
