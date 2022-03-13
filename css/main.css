@@ -25,6 +25,7 @@ html {
   --blanco: #ffffff;
   --negro: #061706;
   --gris: #8999a2;
+  --naranjaoscuro: #865d23;
 }
 
 a {
@@ -40,6 +41,7 @@ ul {
   width: 100%;
   background-color: #14161450;
   z-index: 1;
+  display: none;
 }
 
 .nav-main ul {
@@ -127,6 +129,11 @@ header picture img {
   border: 1px solid #fff;
 }
 
+body {
+  background: url(/sources/img/standard/body3.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
 /* about section*/
 
 #nosotros {
@@ -149,6 +156,7 @@ header picture img {
   width: 42vmax;
   height: 40vmax;
   object-fit: cover;
+  border-radius: 50%;
 }
 
 #nosotros h1 {
@@ -170,7 +178,7 @@ header picture img {
   font-size: 1.3vmax;
   font-weight: lighter;
   padding: 0% 8%;
-  color: var(--gris);
+  color: var(--azuloscuro);
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -186,17 +194,20 @@ header picture img {
 
 /*Ministerios Section*/
 
+#ministerios {
+}
 .ministerios-title {
   width: 100%;
-  margin-top: 1%;
-  text-align: center;
-  background-color: var(--azul);
+  margin-top: 5%;
+  text-align: left;
+  padding-left: 16%;
 }
 
 .ministerios-title h1 {
-  font-size: 6vmax;
+  font-size: 8.5vmax;
   font-family: "Kristi", cursive;
   font-weight: normal;
+  color: var(--azuloscuro);
 }
 
 /* Ministerios carousel*/
@@ -207,7 +218,7 @@ header picture img {
   padding: 1%;
 }
 
-.carousel-previous, 
+.carousel-previous,
 .carousel-next {
   position: absolute;
   display: block;
@@ -223,7 +234,7 @@ header picture img {
   opacity: 60%;
 }
 
-.carousel-previous:hover, 
+.carousel-previous:hover,
 .carousel-next:hover {
   opacity: 100%;
 }
@@ -293,7 +304,7 @@ header picture img {
   font-size: 2.5vmax;
   font-weight: bold;
   color: var(--azuloscuro);
-} 
+}
 
 #pastores .pastor h3,
 #pastores .pastora h3 {
@@ -311,4 +322,84 @@ header picture img {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   right: 5%;
+}
+
+/* Horarios Section*/
+
+#horarios {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+}
+
+.horarios-banner {
+  height: 80%;
+  width: 100%;
+  background: url(/sources/img/standard/about2.jpg) no-repeat center center/cover;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat();
+}
+
+
+/* Ofrendas Section*/
+#ofrendas {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+#ofrendas picture {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  align-self: center;
+  justify-self: center;
+}
+
+#ofrendas picture img {
+  width: 38vmax;
+}
+
+#ofrendas .ofrendas-title {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  text-align: left;
+  padding-right: 10%;
+
+}
+#ofrendas .ofrendas-title h1 {
+  font-size: 8vmax;
+  font-weight: normal;
+  font-family: "Kristi", cursive;
+  color: var(--azuloscuro);
+  padding-top: 2%;
+}
+
+#ofrendas .ofrendas-title h2 {
+  font-weight: bold;
+  color: var(--azuloscuro);
+  font-size: 2.8vmax;
+  text-align: left;
+  padding-top: 13%;
+  width: 90%;
+}
+
+#ofrendas .ofrendas-comprobante {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+#ofrendas .ofrendas-comprobante p {
+  font-weight: lighter;
+  font-size: 1.5vmax;
+  width: 60%;
+  color: var(--azuloscuro);
+}
+/* footer */
+
+footer {
+  background-color: var(--naranjaoscuro);
+  display: block;
+  height: 40vh;
 }
