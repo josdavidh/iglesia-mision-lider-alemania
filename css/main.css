@@ -39,16 +39,17 @@ ul {
 }
 
 .nav-main {
-  display: block;
   position: fixed;
   width: 100%;
-  background-color: #141614b6;
+  background-color: #141614d8;
   z-index: 1;
+  box-shadow: 2px 1px 15px var(--gris);
 }
 
 .nav-main ul {
   width: 90%;
   margin: 2% auto;
+  padding: 0 2%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -403,21 +404,36 @@ header picture img {
 /* Horarios Section*/
 
 #horarios {
-  height: 100vh;
-  display: grid;
+  height: 80vh;
   align-items: center;
+  background: url(/sources/img/standard/about2.jpg) no-repeat center center/cover;
+  filter: brightness(80%);
 }
 
 .horarios-banner {
-  height: 80%;
+  height: 100%;
   width: 100%;
-  background: url(/sources/img/standard/about2.jpg) no-repeat center center/cover;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat();
+  padding-left: 10%;
+  padding-top: 3%;
+  color: var(--blanco);
 }
 
+.horarios-banner h1 {
+  font-family: 'Kristi', cursive;
+  font-size: 12vmax;
+  font-weight: lighter;
+  padding-left: 10%;
+}
 
+.horarios-banner h2 {
+  font-size: 3vmax;
+  color: var(--beigeMedio);
+}
+
+.horarios-banner p {
+  font-size: 1.5vmax;
+  color: var(--beigeClaro);
+}
 /* Ofrendas Section*/
 #ofrendas {
   height: 100vh;
