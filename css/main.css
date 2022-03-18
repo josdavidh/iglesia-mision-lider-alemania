@@ -46,6 +46,14 @@ ul {
   box-shadow: 2px 1px 15px var(--gris);
 }
 
+.menu-btn {
+  color: var(--blanco);
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  display: none;
+}
+
 .nav-main ul {
   width: 90%;
   margin: 2% auto;
@@ -404,7 +412,7 @@ header picture img {
 /* Horarios Section*/
 
 #horarios {
-  height: 80vh;
+  height: 85vh;
   align-items: center;
   background: url(/sources/img/standard/about2.jpg) no-repeat center center/cover;
   filter: brightness(80%);
@@ -414,7 +422,6 @@ header picture img {
   height: 100%;
   width: 100%;
   padding-left: 10%;
-  padding-top: 3%;
   color: var(--blanco);
 }
 

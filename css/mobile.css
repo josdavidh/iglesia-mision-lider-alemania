@@ -1,9 +1,19 @@
 @media (max-width: 700px) {
     .nav-main{
         width: 100%;
-        height: 50%;
+        height: 46%;
         box-shadow: none;
         transform: translate(0, -300px);
+        transition: .5s;
+    }
+
+    .nav-main.show{
+        transform: translate(0, 0);
+        transition: .5s ease-in-out;
+    }
+
+    .menu-btn {
+        display: block;
     }
 
     .nav-main ul {
@@ -58,7 +68,7 @@
     }
 
     #nosotros h1 {
-        grid-column: 1 / 3; 
+        grid-column: 1 / 3;
         padding: 0;
         transform: translate(0, -50%);
     }
