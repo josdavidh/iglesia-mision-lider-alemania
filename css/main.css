@@ -48,10 +48,11 @@ ul {
 }
 
 .menu-btn {
+  position: absolute;
   color: var(--blanco);
   width: 100%;
   text-align: center;
-  padding-top: 10px;
+  bottom: -34px;
   display: none;
 }
 
@@ -71,9 +72,8 @@ ul {
 }
 
 .nav-main ul li a:hover {
-  background-color: var(--naranja);
-  transition: 0.4s ease-in-out;
-  border-radius: 90%;
+  border-bottom: solid 1px var(--naranja);
+  transition: 0.4s;
 }
 
 body {
@@ -105,14 +105,17 @@ header picture img {
 }
 
 .welcome-text img { 
+  position: absolute;
   grid-column: 2 /3;
   grid-row:  1 / 4;
   align-self: end;
   justify-self: end;
-  width: 15vmax;
+  width: 10vmax;
   padding: 3%;
   background: var(--negro);
-  transform: translate(-5%,-5%);
+  border-radius: 5px;
+  bottom: 12px;
+  right: 15px;
 }
 .welcome-text h1,
 .welcome-text p,
@@ -124,7 +127,7 @@ header picture img {
   color: var(--azuloscuro);
   align-self: end;
   justify-self: left;
-  font-size: 10vmax;
+  font-size: 12vmax;
   font-family: "Kristi", cursive;
   font-weight: lighter;
 }
@@ -141,7 +144,7 @@ header picture img {
 .welcome-text a {
   justify-self: left;
   transform: translate(5%, -100%);
-  width: 60%;
+  width: 45%;
 }
 
 .btn-whatsapp {
