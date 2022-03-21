@@ -52,7 +52,12 @@
           Somos una iglesia cristiana en linea. Solicita el Link de nuestras
           reuniones via Zoom
         </p>
-        <a href="#" class="btn-whatsapp">
+        <a
+          class="btn-whatsapp"
+          href="https://api.whatsapp.com/send?phone=+573113712765&text=Hola, quiero solicitar el Link de las reuniones virtuales!"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Solicitar Link de las reuniones<i class="fab fa-whatsapp fa-2x"></i>
         </a>
       </div>
@@ -192,21 +197,79 @@
             ¡No olvides enviar el comprobante de tu ofrenda al siguiente
             n&uacutemero en WhatsAap!
           </p>
-          <a class="btn-whatsapp">
+          <a
+            class="btn-whatsapp"
+            href="https://api.whatsapp.com/send?phone=+573113712765&text=Hola, quiero enviar el comprobante de mi ofrenda en línea!"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Enviar comprobante<i class="fab fa-whatsapp fa-2x"></i>
           </a>
         </div>
       </section>
-
-      <section id="peticiones"></section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="peticiones-container">
+        <div class="peticiones-info">
+          <div class="form-container">
+            <form id="contact-form">
+              <input type="hidden" name="contact_number" />
+              <label>Name</label>
+              <input type="text" name="user_name" />
+              <label>Email</label>
+              <input type="email" name="user_email" />
+              <label>Message</label>
+              <textarea name="message"></textarea>
+              <input type="submit" value="Send" />
+            </form>
+          </div>
+          <div class="contact-info">
+            <div class="phoneNumber">
+              <h1>Telefono de contacto</h1>
+              <h2>+57 3113712765</h2>
+            </div>
+            <div class="email">
+              <h1>Correo Electronico</h1>
+              <h2>iglesiamisionlideralemania@gmail.com</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-end">
+        <div class="rights">
+          <p>
+            Todos los derechos reservados<i class="far fa-copyright"></i> 2022
+            iglesia mis&oacuten l&iacuteder Alemania
+          </p>
+        </div>
+        <div class="footer-social-media">
+          <i class="fab fa-instagram fa-3x"></i>
+          <i class="fab fa-facebook fa-3x"></i>
+          <i class="fab fa-whatsapp fa-3x"></i>
+        </div>
+      </div>
+    </footer>
 
     <!-- Cnd Glider.js -->
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
     <!-- Own Glider.js -->
     <script src="./js/ownGlider.js"></script>
+    <!-- Cnd email js -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <!-- Own email.js -->
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/integration
+        emailjs.init("J-5awTmJFoK1U1V9Y");
+      })();
+    </script>
+    <script src="./js/email.js"></script>
+
     <!-- Own main.js -->
     <script src="./js/main.js"></script>
   </body>

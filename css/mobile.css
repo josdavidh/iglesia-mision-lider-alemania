@@ -190,4 +190,8 @@
         margin-top: 2%;
     }
 
+    .peticiones-container .peticiones-info {
+        flex-direction: column;
+    }
+
 }

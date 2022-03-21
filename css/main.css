@@ -26,7 +26,8 @@ html {
   --blanco: #ffffff;
   --negro: #061706;
   --gris: #8999a2;
-  --naranjaoscuro: #865d23;
+  --naranja: #865d23;
+  --naranjaOscuro: #774b00;
   --whatsappColor: #00a884;
 }
 
@@ -70,7 +71,7 @@ ul {
 }
 
 .nav-main ul li a:hover {
-  background-color: var(--naranjaoscuro);
+  background-color: var(--naranja);
   transition: 0.4s ease-in-out;
   border-radius: 90%;
 }
@@ -92,7 +93,7 @@ header picture img {
   object-fit: cover;
   filter: opacity(50%);
   filter: brightness(60%);
-  border-bottom-left-radius: 80%;
+  border-bottom-left-radius: 90%;
 }
 
 .welcome-text {
@@ -149,13 +150,14 @@ header picture img {
   cursor: pointer;
   display: flex;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 10px 15px;
   background: var(--azuloscuro);
   color: var(--blanco);
   font-size: 1.7vmax;
   border: 1px solid #fff;
   align-items: center;
   justify-content: space-around;
+  border-radius: 80px;
 }
 
 .btn-whatsapp:hover {
@@ -223,8 +225,6 @@ header picture img {
 
 /*Ministerios Section*/
 
-#ministerios {
-}
 .ministerios-title {
   width: 100%;
   margin-top: 5%;
@@ -313,7 +313,7 @@ header picture img {
   font-size: 1.7vmax;
   font-family: 'Kristi', cursive;
   font-weight: normal;
-  color: var(--naranjaoscuro);
+  color: var(--naranja);
   padding: 2% 0%;
   text-align: center;
   border-radius: 25%;
@@ -497,8 +497,77 @@ header picture img {
 }
 /* footer */
 
-footer {
-  background-color: var(--naranjaoscuro);
+.footer {
+  position: relative;
+  background-color: var(--naranja);
   display: block;
-  height: 40vh;
+  height: 100vh;
+  padding-top: 130px;
+}
+
+.footer .peticiones-container {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.peticiones-container .peticiones-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 80%;
+  margin: 0 auto;
+}
+
+.peticiones-container .peticiones-info .contact-info {
+  background: var(--naranjaOscuro);
+  padding: 3%;
+  border-radius: 10%;
+  height: 30vmax;
+  display: grid;
+  align-items: center;
+}
+
+.peticiones-info .contact-info .email {
+  align-self: start;
+}
+
+.peticiones-info .contact-info .phoneNumber, 
+.peticiones-info .contact-info .email {
+  border-bottom: 1px solid #0000004b;
+  padding-bottom: 2%;
+  width: fit-content;
+}
+
+.peticiones-info .contact-info h1 {
+  font-size: 2vmax;
+  color: var(--beigeMedio);
+
+}
+
+.peticiones-info .contact-info h2 {
+  color: var(--beigeClaro);
+  font-size: 1.3vmax;
+  font-weight: normal;
+}
+
+.footer-end {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--naranjaOscuro);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  align-items: center;
+}
+
+.footer-end .rights {
+  font-size: 1.2vmax;
+  color: var(--beigeMedio);
+}
+
+.footer-end .footer-social-media i {
+  padding: 0 10px;
 }
