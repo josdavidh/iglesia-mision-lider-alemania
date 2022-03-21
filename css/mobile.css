@@ -33,6 +33,9 @@
         display: inline-block;
     }
 
+    body {
+        background-attachment: scroll;
+    }
     header {
         height: 50vh;
     }
