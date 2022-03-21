@@ -1,9 +1,9 @@
 @media (max-width: 500px) {
     .nav-main{
         width: 100%;
-        height: 46%;
+        height: 60%;
         box-shadow: none;
-        transform: translate(0, -305px);
+        transform: translate(0, -100%);
         transition: .5s;
     }
 
@@ -20,6 +20,8 @@
         flex-direction: column;
         text-align: center;
         margin-top: 5%;
+        height: 100%;
+        padding-bottom: 5%;
     }
 
     .nav-main ul li {
