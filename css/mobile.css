@@ -200,4 +200,15 @@
         flex-direction: column;
     }
 
+    .peticiones-container .peticiones-info .contact-info {
+        padding: 8% 12%;
+    }
+
+    .footer-end {
+        flex-direction: column-reverse;
+    }
+
+    .footer-end .footer-social-media {
+        padding-bottom: 15px;
+    }
 }

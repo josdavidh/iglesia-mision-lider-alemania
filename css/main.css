@@ -10,6 +10,7 @@
 html {
   font-size: 62.5%;
   font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -58,7 +59,7 @@ ul {
 
 .nav-main ul {
   width: 90%;
-  margin: 2% auto;
+  margin: 1% auto;
   padding: 0 2%;
   display: flex;
   justify-content: space-evenly;
@@ -227,6 +228,7 @@ header picture img {
 }
 
 /*Ministerios Section*/
+
 
 .ministerios-title {
   width: 100%;
@@ -569,6 +571,15 @@ header picture img {
 .footer-end .rights {
   font-size: 1.2vmax;
   color: var(--beigeMedio);
+}
+
+.footer-end .footer-social-media a {
+  color: var(--negro);
+}
+
+.footer-end .footer-social-media a:hover{
+  color: var(--gris);
+  transition: .5 ease-in-out;
 }
 
 .footer-end .footer-social-media i {
