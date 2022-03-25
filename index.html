@@ -213,7 +213,84 @@
       <div class="peticiones-container">
         <div class="peticiones-info">
           <div class="form-container">
-            <form id="contact-form">
+            <div class="form-title">
+              <h1>Contacto</h1>
+            </div>
+            <form class="contact-form" id="contact-form">
+              <!-- Nombre de usuario -->
+              <div class="form-group" id="user-group">
+                <label for="user" class="form-label">Nombre</label>
+                <div class="form-group-input">
+                  <input
+                    type="text"
+                    class="form-input"
+                    name="user"
+                    id="user"
+                    placeholder="Tu nombre"
+                  />
+                  <i class="form-state-validation fas fa-times-circle"></i>
+                </div>
+                <p class="form-group-input-error">Debe ecribir un nombre valido</p>
+              </div>
+
+              <!-- Email del usuario -->
+              <div class="form-group" id="group-email">
+                <label for="email" class="form-label">Correo</label>
+                <div class="form-group-input">
+                  <input
+                    type="email"
+                    class="form-input"
+                    name="email"
+                    id="email"
+                    placeholder="Tu Correo electronico"
+                  />
+                  <i class="form-state-validation fas fa-times-circle"></i>
+                </div>
+                <p class="form-group-input-error">Debe ecribir un email valido</p>
+              </div>
+
+              <!-- Asunto del correo -->
+              <div class="form-group" id="group-subject">
+                <label for="subject" class="form-label">Asunto</label>
+                <div class="form-group-input">
+                  <input
+                    type="text"
+                    class="form-input"
+                    name="subject"
+                    id="subject"
+                    placeholder="Escribe tu asunto"
+                  />
+                  <i class="form-state-validation fas fa-times-circle"></i>
+                </div>
+                <p class="form-group-input-error">Escriba su asunto</p>
+              </div>
+
+              <!-- Contenido del correo -->
+              <div class="form-group" id="group-content">
+                <label for="content" class="form-label">Contenido</label>
+                <div class="form-group-input">
+                  <textarea
+                    class="form-textarea"
+                    name="content"
+                    id="content"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </div>
+              </div>
+
+              <!-- Validacion del correo -->
+              <div class="form-group" id="group-validation">
+                <div class="form-message" id="form-message">
+                  <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b>Asegurate de rellenar el formulario correctamente.</p>
+                </div>
+                <div class="form-group-submit">
+                  <button type="submit" class="form-btn">Enviar</button>
+                  <p class="form-message-success" id="form-message-success"><i class="fas fa-check-circle"></i> Correo enviado exitosamente!</p>
+                </div>
+              </div>
+
+              <!-- 
               <input type="hidden" name="contact_number" />
               <label>Name</label>
               <input type="text" name="user_name" />
@@ -221,7 +298,7 @@
               <input type="email" name="user_email" />
               <label>Message</label>
               <textarea name="message"></textarea>
-              <input type="submit" value="Send" />
+              <input type="submit" value="Send" /> -->
             </form>
           </div>
           <div class="contact-info">

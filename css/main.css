@@ -507,7 +507,8 @@ header picture img {
   background-color: var(--naranja);
   display: block;
   height: 100vh;
-  padding-top: 130px;
+  padding-top: 110px;
+  padding-bottom: 90px;
 }
 
 .footer .peticiones-container {
@@ -524,6 +525,156 @@ header picture img {
   height: 80%;
   margin: 0 auto;
 }
+
+.form-container {
+  width: 55vmax;
+}
+
+.form-title {
+  font-size: 2vmax;
+
+}
+
+.contact-form,
+.form-group,
+.form-group-input {
+  width: 100%;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.5vmax;
+  color: var(--negro);
+}
+
+#group-content,
+#group-validation {
+  grid-column: span 3;
+}
+
+.form-group-input {
+  position: relative;
+}
+
+.form-input {
+  background: var(--beigeClaro);
+  width: 100%;
+  font-size: 1vmax;
+  border: 3px solid transparent;
+  border-radius: 100px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 40px 0 10px;
+  transition: .3s ease all;
+}
+.form-input:hover {
+  box-shadow: 3px 0px 30px rgba(0, 0, 0, 0.212);
+}
+
+.form-input:focus {
+  border: 3px solid var(--azulmedio);
+  outline: none;
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.178);
+}
+
+.form-group-input-error {
+  font-size: 12px;
+  margin-bottom: 0;
+  display: none;
+}
+
+.form-group-input-error-active {
+  display: block;
+}
+
+.form-state-validation {
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  z-index: 50;
+  font-size: 16px;
+  opacity: 0;
+}
+
+.form-textarea {
+  width: 100%;
+  height: 14vmax;
+  padding: 1%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2vmax;
+  border-radius: 10px;
+  background: var(--beigeClaro);
+  resize: none;
+  transition: .1s ease all;
+  outline: none;
+}
+
+.form-textarea:focus {
+  border: 2px solid var(--azulmedio);
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.178);
+}
+
+.form-message {
+  height: 45px;
+	line-height: 45px;
+  font-size: 1.2vmax;
+	background: #f6606080;
+	padding: 0 15px;
+	border-radius: 3px;
+  display: none;
+}
+
+.form-message-active {
+  display: block;
+}
+
+.form-group-submit {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-btn {
+  margin: 5px 0;
+  align-self: end;
+  height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 100px;
+	cursor: pointer;
+	transition: .4s ease all;
+  font-size: 1.5vmax;
+}
+
+.form-btn:hover {
+  background: var(--azuloscuro);
+  box-shadow: 1px 0px 10px rgba(163, 163, 163, 0.349);
+}
+
+.form-message-success {
+  align-self: center;
+}
+
+.form-message-success {
+  font-size: 1.2vmax;
+  padding: 2px 15px;
+  background-color: #a4f6607a;
+  border-radius: 3px;
+  display: none;
+}
+
 
 .peticiones-container .peticiones-info .contact-info {
   background: var(--naranjaOscuro);
