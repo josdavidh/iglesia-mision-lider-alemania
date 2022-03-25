@@ -506,13 +506,12 @@ header picture img {
   position: relative;
   background-color: var(--naranja);
   display: block;
-  height: 100vh;
   padding-top: 110px;
   padding-bottom: 90px;
 }
 
 .footer .peticiones-container {
-  margin: 0 auto;
+  margin-bottom: 4%;
   width: 100%;
   height: 100%;
 }
@@ -588,7 +587,10 @@ header picture img {
 
 .form-group-input-error {
   font-size: 12px;
-  margin-bottom: 0;
+  font-weight: bold;
+  margin: 2px 3px 0px 10px;
+  font-weight: lighter;
+  color: var(--beigeMedio);
   display: none;
 }
 
@@ -675,6 +677,26 @@ header picture img {
   display: none;
 }
 
+.form-message-success-active {
+  display: block;
+}
+
+
+/*Styles Validation Form */
+
+.form-group-correct .form-state-validation {
+  color: #a4f660;
+  opacity: 1;
+}
+
+.form-group-incorrect .form-state-validation {
+  color: #f66060b9;
+  opacity: 1;
+}
+
+.form-group-incorrect .form-input {
+  border: 3px solid #f66060;
+}
 
 .peticiones-container .peticiones-info .contact-info {
   background: var(--naranjaOscuro);

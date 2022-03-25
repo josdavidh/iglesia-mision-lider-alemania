@@ -1,4 +1,4 @@
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .nav-main{
         width: 100%;
         height: 60%;
@@ -196,16 +196,71 @@
         margin-top: 2%;
     }
 
+    .form-container {
+        width: 90%;
+    }
+
+    .form-title {
+        font-size: 2rem;  
+    }
+
+    .form-label {
+        font-size: 1.8rem;
+    }
+
+    .form-input {
+        font-size: 1.5rem;
+    }
+
+    .form-textarea {
+        font-size: 1.5rem;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+
+    #group-content,
+    #group-validation {
+        grid-column: 1;
+    }
+
+    .form-message {
+        font-size: 1.2rem;
+    }
+
+    .form-btn{
+        font-size: 1.5rem;
+        align-self: center;
+        width: 40%;
+    }
+
+    .form-message-success {
+        font-size: 1.2rem;
+    }
+
     .peticiones-container .peticiones-info {
         flex-direction: column;
     }
 
     .peticiones-container .peticiones-info .contact-info {
-        padding: 8% 12%;
+        padding:20px;
+        margin: 20px 0 30px 0;
     }
 
+    .peticiones-info .contact-info h1 {
+        font-size: 2rem;
+    }
+
+    .peticiones-info .contact-info h2 {
+        font-size: 1.8rem;
+    }
     .footer-end {
         flex-direction: column-reverse;
+    }
+
+    .footer-end .rights{
+        font-size: 1.2rem;
     }
 
     .footer-end .footer-social-media {
