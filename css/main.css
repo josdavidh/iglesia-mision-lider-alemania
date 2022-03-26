@@ -665,9 +665,6 @@ header picture img {
   box-shadow: 1px 0px 10px rgba(163, 163, 163, 0.349);
 }
 
-.form-message-success {
-  align-self: center;
-}
 
 .form-message-success {
   font-size: 1.2vmax;
@@ -675,6 +672,7 @@ header picture img {
   background-color: #a4f6607a;
   border-radius: 3px;
   display: none;
+  align-self: center;
 }
 
 .form-message-success-active {
@@ -695,6 +693,10 @@ header picture img {
 }
 
 .form-group-incorrect .form-input {
+  border: 3px solid #f66060;
+}
+
+.form-textarea-incorrect .form-textarea{
   border: 3px solid #f66060;
 }
 

@@ -54,7 +54,7 @@
         </p>
         <a
           class="btn-whatsapp"
-          href="https://api.whatsapp.com/send?phone=+573113712765&text=Hola, quiero solicitar el Link de las reuniones virtuales!"
+          href="https://api.whatsapp.com/send?phone=+573002981669&text=Hola, quiero solicitar el Link de las reuniones virtuales!"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -199,7 +199,7 @@
           </p>
           <a
             class="btn-whatsapp"
-            href="https://api.whatsapp.com/send?phone=+573113712765&text=Hola, quiero enviar el comprobante de mi ofrenda en línea!"
+            href="https://api.whatsapp.com/send?phone=+573002981669&text=Hola, quiero enviar el comprobante de mi ofrenda en línea!"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -230,7 +230,10 @@
                   />
                   <i class="form-state-validation fas fa-times-circle"></i>
                 </div>
-                <p class="form-group-input-error">El nombre debe ser de 4 a 16 d&iacutegitos y no puede tener s&iacutembolos</p>
+                <p class="form-group-input-error">
+                  El nombre debe ser m&aacuteximo de 40 letras y no puede tener
+                  s&iacutembolos
+                </p>
               </div>
 
               <!-- Email del usuario -->
@@ -246,7 +249,9 @@
                   />
                   <i class="form-state-validation fas fa-times-circle"></i>
                 </div>
-                <p class="form-group-input-error">Debe escribir un correo valido</p>
+                <p class="form-group-input-error">
+                  Debe escribir un correo valido
+                </p>
               </div>
 
               <!-- Asunto del correo -->
@@ -258,11 +263,13 @@
                     class="form-input"
                     name="subject"
                     id="subject"
-                    placeholder="Escribe tu asunto"
+                    placeholder="Asunto o peticion de oración"
                   />
                   <i class="form-state-validation fas fa-times-circle"></i>
                 </div>
-                <p class="form-group-input-error">Escriba su asunto</p>
+                <p class="form-group-input-error">
+                  El asunto debe contener de 7 a 40 letras
+                </p>
               </div>
 
               <!-- Contenido del correo -->
@@ -276,29 +283,31 @@
                     cols="30"
                     rows="10"
                   ></textarea>
+                  <p class="form-group-input-error">
+                    Debe escribir un contenido con m&aacuteximo 300 caracteres
+                  </p>
                 </div>
               </div>
 
               <!-- Validacion del correo -->
               <div class="form-group" id="group-validation">
                 <div class="form-message" id="form-message">
-                  <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b>Asegurate de rellenar el formulario correctamente.</p>
+                  <p>
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <b>Error:</b>Asegurate de rellenar el formulario
+                    correctamente.
+                  </p>
                 </div>
                 <div class="form-group-submit">
-                  <button type="submit" class="form-btn">Enviar</button>
-                  <p class="form-message-success" id="form-message-success"><i class="fas fa-check-circle"></i> Correo enviado exitosamente!</p>
+                  <button type="submit" class="form-btn" value="Send">
+                    Enviar
+                  </button>
+                  <p class="form-message-success" id="form-message-success">
+                    <i class="fas fa-check-circle"></i> Correo enviado
+                    exitosamente!
+                  </p>
                 </div>
               </div>
-
-              <!-- 
-              <input type="hidden" name="contact_number" />
-              <label>Name</label>
-              <input type="text" name="user_name" />
-              <label>Email</label>
-              <input type="email" name="user_email" />
-              <label>Message</label>
-              <textarea name="message"></textarea>
-              <input type="submit" value="Send" /> -->
             </form>
           </div>
           <div class="contact-info">
@@ -337,7 +346,7 @@
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://api.whatsapp.com/send?phone=+573113712765&text=Hola, quisiera recibir más información de la iglesia"
+            href="https://api.whatsapp.com/send?phone=+573002981669&text=Hola, quisiera recibir más información de la iglesia"
             ><i class="fab fa-whatsapp fa-3x"></i
           ></a>
         </div>
@@ -348,22 +357,20 @@
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
     <!-- Own Glider.js -->
     <script src="./js/ownGlider.js"></script>
-    <!-- own form.js -->
-    <script src="./js/form.js"></script>
     <!-- Cnd email js -->
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
     <!-- Own email.js -->
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
       (function () {
         // https://dashboard.emailjs.com/admin/integration
-        emailjs.init("J-5awTmJFoK1U1V9Y");
+        emailjs.init("hhLh-mQHmYFTM7Dm_");
       })();
     </script>
-    <script src="./js/email.js"></script> -->
-
+    <!-- own form.js -->
+    <script src="./js/form.js"></script>
     <!-- Own main.js -->
     <script src="./js/main.js"></script>
   </body>
