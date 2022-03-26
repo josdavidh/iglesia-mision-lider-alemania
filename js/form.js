@@ -83,12 +83,12 @@ window.onload = function () {
     
         if(fields.user && fields.email && fields.subject && fields.content ){
 
-            // emailjs.sendForm('service_rbnks63', 'formulario_de_contacto', formulario, "hhLh-mQHmYFTM7Dm_")
-            // .then(function () {
-            //     console.log('SUCCESS!');
-            // }, function (error) {
-            //     console.log('FAILED...', error);
-            // });
+            emailjs.sendForm('service_6hpmikb', 'formulario_de_contacto', formulario, "hhLh-mQHmYFTM7Dm_")
+            .then(function () {
+                console.log('SUCCESS!');
+            }, function (error) {
+                console.log('FAILED...', error);
+            });
 
             formulario.reset();
 
