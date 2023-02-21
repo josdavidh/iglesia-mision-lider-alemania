@@ -15,6 +15,9 @@
     <!-- Mobile theme CSS-->
     <link href="css/mobile.css" rel="stylesheet" />
 
+    <!-- Tablet theme CSS-->
+    <link href="css/tablet.css" rel="stylesheet" media="(min-width: 930px)"/>
+
     <!-- Font awesome -->
     <link
       rel="stylesheet"
@@ -30,21 +33,38 @@
       href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css"
     />
   </head>
-  <nav class="nav-main">
-    <ul>
-      <li><a href="#nosotros">Nosotros</a></li>
-      <li><a href="#ministerios">Ministerios</a></li>
-      <li><a href="#pastores">Pastores</a></li>
-      <li><a href="#horarios">Horario</a></li>
-      <li><a href="#ofrendas">Ofrendas</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-    <div class="menu-btn">
-      <i class="fas fa-bars fa-3x"></i>
-    </div>
-  </nav>
   <body>
-    <header class="home">
+    <header class="header">
+      <div class="nav-main">
+        <div class="logo">
+          <i id="menu-btn" class="fa fa-bars"></i>
+          <a href="/" data-href="index.html">
+            <img class="icon" src="https://iglesiamisionliderparis.org/src/images/MISIÓN LÍDER .png"
+              alt="Misi&oacute;n Líder">
+          </a>
+          <a class="iglesia" href="/">
+            <span>Misi&oacute;n L&iacute;der Alemania</span>
+          </a>
+        </div>
+  
+        <nav class="nav-bar">
+          <ul class="nav-menu">
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#ministerios">Ministerios</a></li>
+            <li><a href="#pastores">Pastores</a></li>
+            <li><a href="#horarios">Horario</a></li>
+            <li><a href="#ofrendas">Ofrendas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+  
+      <!-- Boton de whatsapp -->
+      <a id="btn-wsp"
+        href="https://api.whatsapp.com/send?phone=+573204139770&text=¡Hola, Iglesia Misión Líder París!, quisiera recibir información acerca de ..."
+        target="_blank" rel="noopener noreferrer" class="btn-wsp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+    </header>
+    <!-- <header class="home">
       <picture>
         <img src="./sources/img/standard/main-removebg-preview.png" alt="" />
       </picture>
@@ -64,7 +84,7 @@
           Solicitar Link de las reuniones<i class="fab fa-whatsapp fa-2x"></i>
         </a>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <section id="nosotros">

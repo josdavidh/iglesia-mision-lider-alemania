@@ -30,6 +30,21 @@ html {
   --naranja: #865d23;
   --naranjaOscuro: #774b00;
   --whatsappColor: #00a884;
+
+  --black: #000000;
+  --white: #fff;
+  --soft-black: #333;
+  --soft-white: #f0f0f0;
+  --dark-green: #559236;
+  --soft-green: #ddf8ad;
+  --dark-gray: #252525;
+  --gray: #808080;
+  --red: #B22222;
+  --whatsApp: #4dc046;
+  --hover-whatsApp: #318d2c;
+  --color-body: #ddd;
+  --beige: #e4e2e1;
+  --color-horarios: #b8b5b5;
 }
 
 a {
@@ -40,7 +55,7 @@ ul {
   list-style: none;
 }
 
-.nav-main {
+/* .nav-main {
   position: fixed;
   width: 100%;
   background-color: #141614d8;
@@ -75,16 +90,118 @@ ul {
 .nav-main ul li a:hover {
   border-bottom: solid 1px var(--naranja);
   transition: 0.4s;
-}
+} */
 
 body {
   background: url(/sources/img/standard/body3.jpg) no-repeat center center/cover;
   background-attachment: fixed;
 }
 
-header {
-  height: 100vh;
+/* Header */
+header.header {
+  display: flex;
+  font-weight: bold;
 }
+
+.nav-main {
+  position: fixed;
+  top: 0;
+  font-size: 1.7rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  z-index: 1;
+  transition: all 1s ease-out;
+}
+
+.nav-main ul.nav-menu li a:hover {
+  box-shadow: inset 0 -2px 0 var(--soft-green);
+  opacity: 0.8;
+  transition: all 0.5s ease-out;
+}
+
+div.logo {
+  width: 100%;
+  height: fit-content;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+}
+
+div.logo a.iglesia {
+  color: var(--soft-white);
+  font-size: 1.9rem;
+}
+
+#menu-btn {
+  padding-right: 10px;
+  font-size: 4rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.icon {
+  cursor: pointer;
+  height: auto;
+  width: 100px;
+  transition: all 1s ease-out;
+}
+
+.scroll .icon {
+  cursor: pointer;
+  margin-right: 15px;
+  height: auto;
+  width: 80px;
+  transition: all 1s ease-out;
+}
+
+div.logo a.iglesia {
+  color: var(--soft-white);
+  font-size: 1.9rem;
+}
+
+.nav-bar {
+  position: relative;
+  background-color: var(--dark-gray);
+  width: 100%;
+  z-index: -100;
+  transform: translate(0, -1000px);
+  transition: .5s ease all;
+}
+
+.nav-bar.show {
+  transform: translate(0, 0);
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-menu li {
+  padding: 15px 0;
+}
+
+.nav-menu-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.nav-menu-right a {
+  padding: 10px 15px;
+  color: var(--white);
+}
+
+
+
 
 header picture img {
   position: absolute;
