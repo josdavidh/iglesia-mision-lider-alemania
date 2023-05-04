@@ -41,7 +41,7 @@ div.logo {
 }
 
 .nav-main.scroll {
-  background-color: var(--black);
-  box-shadow: 0 1px 5px 0 rgb(0 0 0);
+  background-color: var(--nav-color);
+  box-shadow: 0 1px 5px 0 var(--nav-color);
   position: fixed;
 }

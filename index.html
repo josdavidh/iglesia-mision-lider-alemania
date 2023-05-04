@@ -28,13 +28,14 @@
     />
 
     <!-- Glider Styles -->
+    <link rel="stylesheet" href="https://iglesiamisionliderparis.org/src/glider/glider.min.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css"
     />
   </head>
   <body>
-    <header class="header">
+    <header>
       <div class="nav-main">
         <div class="logo">
           <i id="menu-btn" class="fa fa-bars"></i>
@@ -59,10 +60,6 @@
         </nav>
       </div>
   
-      <!-- Boton de whatsapp -->
-      <a id="btn-wsp"
-        href="https://api.whatsapp.com/send?phone=+573204139770&text=¡Hola, Iglesia Misión Líder París!, quisiera recibir información acerca de ..."
-        target="_blank" rel="noopener noreferrer" class="btn-wsp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
     </header>
     <!-- <header class="home">
       <picture>
@@ -87,6 +84,71 @@
     </header> -->
 
     <main>
+
+      <section class="ministerios">
+        <div class="carousel">
+          <div class="carousel-cotenido">
+            <button aria-label="Anterior" class="carousel-anterior">
+              <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </button>
+    
+            <div class="carousel-lista">
+              <div class="carousel-elemento">
+                <img src="https://iglesiamisionliderparis.org/src/images/bienvenidos.png" alt="comunidad">
+              </div>
+              <div class="carousel-elemento">
+                <img src="https://iglesiamisionliderparis.org/src/images/Bienvenidos2.png" alt="comunidad">
+              </div>
+              <div class="carousel-elemento">
+                <img src="https://iglesiamisionliderparis.org/src/images/Bienvenidos4.PNG" alt="comunidad">
+              </div>
+            </div>
+    
+            <button aria-label="Siguiente" class="carousel-siguiente">
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </button>
+            <div role="tablist" class="carousel-indicador"></div>
+    
+          </div>
+      </section>
+
+      <section class="community-section">
+        <div class="community-container">
+          <div class="community">
+            <h1>
+              <span>Nuestra</span> comunidad
+            </h1>
+            <p>
+              Nuestra comunidad es un lugar en donde los heridos, rechazados y pobres en esp&iacute;ritu, encontrar&aacute;n
+              aceptaci&oacute;n en
+              el amor de Cristo; donde encontrar&aacute;n redenci&oacute;n y un prop&oacute;sito para sus vidas.
+            </p>
+          </div>
+    
+          <div class="mision-vision">
+            <div class="mision">
+              <img src="./sources/img/standard/mision.png" alt="Misi&oacute;n" />
+              <h2>Misi&oacute;n</h2>
+              <p>
+                Atraer las personas a Jes&uacute;s, plantarlas en la iglesia, formarlas como l&iacute;deres y equiparlas
+                para ejercer su
+                ministerio; usando los dones y talentos dados por Dios, para establecer su Reino en la tierra.
+              </p>
+            </div>
+    
+            <div class="vision">
+              <img src="./sources/img/standard/vision.png" alt="Visi&oacute;n" />
+              <h2>Visi&oacute;n</h2>
+              <p>
+                Es el sue&ntilde;o de comunicar las Buenas Noticias de Jes&uacute;s y formar l&iacute;deres en el
+                departamento Antioque&ntilde;o, en
+                Colombia y el mundo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="nosotros">
         <picture>
           <source
@@ -127,7 +189,7 @@
             su iglesia.
           </li>
           <li>
-            <i class="fa fa-quote-left"></i>la sanidad y la prosperidad integral
+            <i class="fa fa-quote-left"></i>La sanidad y la prosperidad integral
             para ser bendecidos y ser de bendición a otros.
           </li>
         </ul>
@@ -205,6 +267,41 @@
           <h2>Vigilia</h2>
           <p>Realizamos una vigilia el ultimo s&aacutebado de cada mes</p>
         </div>
+      </section>
+
+      <section>
+        <h2 class="label-galeria"><span class="titulo">Galería d</span>e fotos</h2>
+        <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+        slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+        coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+        <swiper-slide>
+          <img src=" https://swiperjs.com/demos/images/nature-1.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+        </swiper-slide>
+      </swiper-container>
       </section>
 
       <section id="ofrendas">
@@ -378,8 +475,10 @@
       </div>
     </footer>
 
+    <script type="text/javascript" src="https://iglesiamisionliderparis.org/src/glider/glider.min.js"></script>
     <!-- Cnd Glider.js -->
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     <!-- Own Glider.js -->
     <script src="./js/ownGlider.js"></script>
     <!-- Cnd email js -->

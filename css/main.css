@@ -1,5 +1,6 @@
 /*Gloogle fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Kristi&family=Open+Sans:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
 * {
   margin: 0;
@@ -9,7 +10,8 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Merriweather', serif "Open Sans", sans-serif; */
   scroll-behavior: smooth;
 }
 
@@ -30,11 +32,11 @@ html {
   --naranja: #865d23;
   --naranjaOscuro: #774b00;
   --whatsappColor: #00a884;
-
+  --nav-color: #1b2727;
+  --white: #D5DDDF;
   --black: #000000;
-  --white: #fff;
   --soft-black: #333;
-  --soft-white: #f0f0f0;
+  --soft-white: #D5DDDF;
   --dark-green: #559236;
   --soft-green: #ddf8ad;
   --dark-gray: #252525;
@@ -45,10 +47,12 @@ html {
   --color-body: #ddd;
   --beige: #e4e2e1;
   --color-horarios: #b8b5b5;
+  --title: #3c5148;
 }
 
 a {
   text-decoration: none;
+  color: var(--soft-white);
 }
 
 ul {
@@ -93,14 +97,7 @@ ul {
 } */
 
 body {
-  background: url(/sources/img/standard/body3.jpg) no-repeat center center/cover;
-  background-attachment: fixed;
-}
-
-/* Header */
-header.header {
-  display: flex;
-  font-weight: bold;
+  background-color: var(--soft-white);
 }
 
 .nav-main {
@@ -112,15 +109,10 @@ header.header {
   align-items: center;
   width: 100%;
   height: 90px;
-  z-index: 1;
+  z-index: 99999;
   transition: all 1s ease-out;
 }
 
-.nav-main ul.nav-menu li a:hover {
-  box-shadow: inset 0 -2px 0 var(--soft-green);
-  opacity: 0.8;
-  transition: all 0.5s ease-out;
-}
 
 div.logo {
   width: 100%;
@@ -129,7 +121,7 @@ div.logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--black);
+  background-color: var(--nav-color);
 }
 
 div.logo a.iglesia {
@@ -140,7 +132,7 @@ div.logo a.iglesia {
 #menu-btn {
   padding-right: 10px;
   font-size: 4rem;
-  color: var(--white);
+  color: var(--soft-white);
   cursor: pointer;
 }
 
@@ -149,6 +141,10 @@ div.logo a.iglesia {
   height: auto;
   width: 100px;
   transition: all 1s ease-out;
+}
+
+.scroll .icon:hover {
+  transform: translateY(-5px);
 }
 
 .scroll .icon {
@@ -187,32 +183,196 @@ div.logo a.iglesia {
   padding: 15px 0;
 }
 
-.nav-menu-right {
+.nav-main ul.nav-menu li a:hover {
+  box-shadow: inset 0 -2px 0 var(--soft-green);
+  opacity: 0.8;
+  transition: all 0.5s ease-out;
+}
+/* Carousel */
+
+.carousel {
+  width: 100%;
+  height: fit-content;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.1s ease-in-out;
+}
+
+.carousel-cotenido {
+  height: 100%;
+}
+
+.carousel-lista{
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-elemento {
+  width: 100%;
+}
+
+.carousel-elemento img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-anterior,
+.carousel-siguiente {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  font-size: 2.8rem;
+  line-height: 30px;
+  text-align: center;
+  background: none;
+  color: var(--soft-green);
+  opacity: 50%;
+  z-index: 1;
+  display: none;
+}
+
+.carousel-anterior:hover,
+.carousel-siguiente:hover {
+  opacity: 100%;
+}
+
+.carousel-siguiente {
+  right: 30px;
+}
+
+.carousel-anterior {
+  left: 30px;
+}
+
+.carousel-indicador .glider-dots.active {
+  opacity: 1;
+}
+
+/*Marco Filosofico*/
+
+.community-section {
+  padding: 50px 0 30px;
+  background-image: url('../backgrounds/background1.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.community-container {
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
   display: flex;
-  flex-direction: row;
+  align-content: center;
   justify-content: center;
   align-items: center;
-  padding-bottom: 10px;
+  flex-wrap: wrap;
 }
 
-.nav-menu-right a {
-  padding: 10px 15px;
-  color: var(--white);
+.community {
+  min-width: 288px;
+  max-width: 800px;
+  height: fit-content;
+}
+
+.community h1{
+  font-size: 4rem;
+  line-height: 4.2rem;
+  text-align: center;
+}
+
+.community span {
+  color: var(--title);
+}
+
+.community p {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: .5px;
+  padding: 10px;
+}
+
+.mision-vision {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 850px;
+  margin-top: 5px;
+}
+
+.mision,
+.vision {
+  width: 100%;
+  min-width: 288px;
+  max-width: 400px;
+  text-align: center;
+  padding: 10px;
+}
+
+.mision h2,
+.vision h2 {
+  font-size: 3.5rem;
+  line-height: 3.7rem;
+}
+
+.mision p,
+.vision p {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: .5px;
 }
 
 
 
 
-header picture img {
-  position: absolute;
-  right: 0;
-  width: 70%;
-  height: 100%;
-  object-fit: cover;
-  filter: opacity(50%);
-  filter: brightness(60%);
-  border-bottom-left-radius: 90%;
+.text-center p {
+  min-width: 320px;
+  max-width: 400px;
+  text-align: justify;
+  padding: 5px 10px;
 }
+
+/* Galeria */
+
+swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  z-index: 1;
+}
+
+swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.titulo {
+  color: var(--title);
+}
+
+.label-galeria {
+  color: var(--nav-color);
+  font-size: 5vmax;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+}
+
 
 .welcome-text {
   display: grid;
@@ -301,7 +461,7 @@ header picture img {
 #nosotros picture {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
-  padding: 6% 6% 6% 12%;
+  padding: 3% 3% 3% 3%;
 }
 
 #nosotros picture img {
@@ -341,7 +501,8 @@ header picture img {
 }
 
 #nosotros ul li i {
-  color: var(--azul);
+  color: var(--nav-color);
+  opacity: 0.8;
 }
 
 /*Ministerios Section*/
